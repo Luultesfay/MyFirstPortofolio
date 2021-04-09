@@ -9,11 +9,11 @@ const selectContact = document.querySelector("#Contact");
 selectWelcome.addEventListener("mouseover", function () {
   selectWelcome.style.backgroundColor = "yellow";
   discText.style.color = "brown";
-  discText.style.fontSize = "30px";
+  //discText.style.fontSize = "30px";
   discText1.style.color = "brown";
-  discText1.style.fontSize = "29px";
+  //discText1.style.fontSize = "29px";
   discText2.style.color = "brown";
-  discText2.style.fontSize = "20px";
+  //discText2.style.fontSize = "20px";
 });
 selectProject.addEventListener("mouseover", function () {
   selectProject.style.color = "brown";
