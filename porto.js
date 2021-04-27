@@ -24,3 +24,23 @@ selectProject.addEventListener("mouseover", function () {
 selectContact.addEventListener("mouseover", function () {
   selectContact.style.color = "brown";
 });
+
+//button scrolling
+const btnScrollto = document.querySelector(".btn--scroll-to");
+const sectionProject = document.querySelector("#projects");
+
+//add eventListner
+
+btnScrollto.addEventListener("click", function (e) {
+  sectionProject.scrollIntoView({ behavior: "smooth" });
+});
+
+//button scrolling
+const btnScrollContacts = document.querySelector(".btn--scroll-contacts");
+const sectionContact = document.querySelector("#Contact");
+
+//add eventListner
+
+btnScrollContacts.addEventListener("click", function (e) {
+  sectionContact.scrollIntoView({ behavior: "smooth" });
+});

@@ -38,6 +38,13 @@ ul li a {
   cursor: pointer;
   position: relative;
 }
+.btn--text {
+  background: orange;
+  width: 100px;
+  border-radius: 8px;
+  font-weight: bolder;
+}
+
 section {
   max-width: 100%;
   min-height: 100vh;
