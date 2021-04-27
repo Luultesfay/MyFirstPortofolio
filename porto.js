@@ -44,3 +44,11 @@ const sectionContact = document.querySelector("#Contact");
 btnScrollContacts.addEventListener("click", function (e) {
   sectionContact.scrollIntoView({ behavior: "smooth" });
 });
+
+//we added pop up alert to our portofolio and then remove the pop up message after 3 second using removeEventListener
+const header1 = document.querySelector("#header");
+const alertWelcome = function (e) {
+  alert("Thank You for visting my Portofolio❤️😍");
+};
+header1.addEventListener("mouseenter", alertWelcome);
+setTimeout(() => header1.removeEventListener("mouseenter", alertWelcome), 3000);
