@@ -52,3 +52,14 @@ const alertWelcome = function (e) {
 };
 header1.addEventListener("mouseenter", alertWelcome);
 setTimeout(() => header1.removeEventListener("mouseenter", alertWelcome), 3000);
+
+//smoth scrolling using event propogation
+document.querySelector(".navbar").addEventListener("click", function (e) {
+  e.preventDefault();
+  console.log(e.target.getAttribute("href"));
+  if (e.target.classList.contains("navlink")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+  const id = e.target.getAttribute("href");
+});
